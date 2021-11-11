@@ -16,15 +16,28 @@
       var testRecord = new TestClass();
       testRecord.set("message2", "hello, world");
       testRecord.save();
+
+      var renda=0;
+
+      $(function(){
+        $("#btnA").click(function(e){
+            $("#a").html("all for one");
+            $("#a").css("font-size", "50px");
+            $("#a").css("color", "red");
+            $("#a").css("background-color", "white");
+            $("#a").css("padding", "5px");
+            $("#a").css("margin-left", "10%");
+            $("#a").css("border", "10px solid purple");
+            $("#a").css("border-radius", "15px");
+          })
+        
+      });
+       
     </script>
 </head>
 <body>
-
-	<br />
-    This is a template for Monaca app.
+  <div id="a">a</div>
+  <button id="btnA">ここをクリック！</button>
 </body>
 
-<div id="hosi">☆</div>
-<div id="a"></div>
-<button id="btn">ここをクリック！</button>
 </html>
